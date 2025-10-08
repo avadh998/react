@@ -73,7 +73,7 @@ function App() {
         toggleText={toggleText}
       />
       <Alert alert={alert} />
-      <div className="container">
+      <div className="container"> 
         <TextForm
           heading="Enter text below"
           mode={mode}
