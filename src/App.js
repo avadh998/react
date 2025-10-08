@@ -75,7 +75,7 @@ function App() {
       <Alert alert={alert} />
       <div className="container"> 
         <TextForm
-          heading="Enter text below"
+          heading="Enter texts below"
           mode={mode}
           showAlert={showAlert}
         />
