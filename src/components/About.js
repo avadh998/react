@@ -3,7 +3,7 @@
 export default function About(props) {
   return (
     <div className="container">
-      <h2 className="my-5">About</h2>
+      <h2>About</h2>
       <div className="accordion" id="accordionExample">
         <div className="accordion-item">
           <h2 className="accordion-header">
