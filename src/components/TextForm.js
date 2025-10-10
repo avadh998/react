@@ -50,21 +50,22 @@ export default function TextForm(props) {
           }}
         ></textarea>
         <button
-          className="btn btn-primary mt-3"
+          className={`btn btn-${props.btnColor} mt-3 ms-3`}
           onClick={handleUpClick}
           disabled={text.length === 0}
+          
         >
           Convert to UPPERCASE
         </button>
         <button
-          className="btn btn-primary mt-3 ms-3"
+          className={`btn btn-${props.btnColor} mt-3 ms-3`}
           onClick={handleLoClick}
           disabled={text.length === 0}
         >
           Convert to lowercase
         </button>
         <button
-          className="btn btn-primary mt-3 ms-3"
+          className={`btn btn-${props.btnColor} mt-3 ms-3`}
           onClick={handleClearText}
           disabled={text.length === 0}
         >
@@ -73,7 +74,7 @@ export default function TextForm(props) {
         <button
           type="submit"
           onClick={speak}
-          className="btn btn-primary  mt-3 ms-3"
+          className={`btn btn-${props.btnColor} mt-3 ms-3`}
           disabled={text.length === 0}
         >
           Speak

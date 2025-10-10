@@ -39,11 +39,17 @@ export default function Navbar(props) {
               <Link className="nav-link" to="/about">
                 About
               </Link>
-              {/* <a className="nav-link" href="/">
+              {/* /<a className="nav-link" href="/">
                 About
               </a> */}
             </li>
           </ul>
+        </div>
+        <div className="d-flex">
+          <div className="bg-primary rounded mx-2" onClick={()=>{props.toggleMode('primary')}} style={{width: "30px", height:"30px"}}></div>
+          <div className="bg-danger rounded mx-2" onClick={()=>{props.toggleMode('danger')}} style={{width: "30px", height:"30px"}}></div>
+          <div className="bg-success rounded mx-2" onClick={()=>{props.toggleMode('success')}} style={{width: "30px", height:"30px"}}></div>
+          <div className="bg-warning rounded mx-2" onClick={()=>{props.toggleMode('warning')}} style={{width: "30px", height:"30px"}}></div>
         </div>
         <div className="form-check form-switch">
           <input
@@ -51,7 +57,7 @@ export default function Navbar(props) {
             type="checkbox"
             role="switch"
             id="switchCheckDefault"
-            onClick={props.toggleMode}
+            onClick={()=>{props.toggleMode(null)}}
           />
           <label
             className={`form-check-label text-${
